@@ -36,7 +36,7 @@ namespace DumpFileLoader
                 if (!dumpFile.Validate(out dumpFileValidationErrors))
                 {
                     dumpFileContext.LogFileErrors(dumpFileValidationErrors);
-                    dumpFileContext.MoveToDraft(dumpFile);
+                    dumpFileContext.Draft(dumpFile);
                 }
 
                 uint batchSize = 100;
@@ -55,7 +55,7 @@ namespace DumpFileLoader
                         catch (Exception ex)
                         {
 
-                            dumpFileContext.MoveToDraft(dumpFile, entity)
+                            dumpFileContext.Draft(dumpFile, row.(line));
                         }
                     }
                 }

@@ -8,6 +8,6 @@ namespace DumpFileLoader
         IDumpFileQueue<DumpFile> FileQueue();
         void LogFileErrors(IList<string> dumpFileValidationErrors);
         void Archive(DumpFile dumpFile);
-        void MoveToDraft(DumpFile dumpFile);
+        void Draft(DumpFile dumpFile);
     }
 }

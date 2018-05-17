@@ -25,7 +25,7 @@ namespace DumpFileLoader
             throw new System.NotImplementedException();
         }
 
-        public void MoveToDraft(DumpFile dumpFile)
+        public void Draft(DumpFile dumpFile)
         {
             throw new System.NotImplementedException();
         }
